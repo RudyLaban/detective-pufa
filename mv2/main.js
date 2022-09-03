@@ -45,7 +45,12 @@ if (document.URL.search("indexes.functions.php") != -1) {
         alert('Réactualisez la page quand vous souhaiterez utiliser le module.');
     }
 } else {
+    // Pour lancer la page charger le jeu
     setTimeout(() => {
-        alert("Le mot à deviner contient " + document.querySelectorAll('#grille table tr:first-child td').length + " lettres. \nRendez-vous sur https://www.php.net/manual/fr/indexes.functions.php pour trouver des indices.");
+        let nbrOfLetters = document.querySelectorAll('#grille table tr:first-child td').length;
+        let redirect = confirm("Le mot à deviner contient " + nbrOfLetters + " lettres.\nSouhaitez-vous vous rendre sur la documentation php pour trouver des indices ?");
+        if(redirect) {
+            window.open('https://www.php.net/manual/fr/indexes.functions.php', '_blank');
+        }
     }, 1500)
 }
