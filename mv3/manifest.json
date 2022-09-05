@@ -1,8 +1,8 @@
 {
     "manifest_version":3,
-    "version":"1.0",
+    "version":"0.0.0.1",
     "name":"Détective PUFA",
-    "description": "Détective PUFA vous aide à decouvrir le mot du jour sur https://pufa.afup.org/. Rendez-vous sur https://www.php.net/manual/fr/indexes.functions.php pour le trouver.",
+    "description": "Résolvez le motus pufa.afup.org/ du jour grâce aux indices que vous révélera Détective Pufa.",
     "content_scripts":[
         {
             "matches":["https://*.php.net/manual*indexes.functions.php", "https://pufa.afup.org/*"],
@@ -16,5 +16,11 @@
             "48": "/images/logo_48.png",
             "128": "/images/logo_128.png"
         }
+    },
+    "icons": {
+        "16": "/images/logo_16.png",
+        "32": "/images/logo_32.png",
+        "48": "/images/logo_48.png",
+        "128": "/images/logo_128.png"
     }
 }

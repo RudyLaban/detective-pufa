@@ -1,8 +1,8 @@
 {
     "manifest_version":2,
-    "version":"1.0",
+    "version":"0.0.0.1",
     "name":"Détective PUFA",
-    "description": "Détective PUFA vous aide à decouvrir le mot du jour sur https://pufa.afup.org/. Rendez-vous sur https://www.php.net/manual/fr/indexes.functions.php pour le trouver.",
+    "description": "Résolvez le motus pufa.afup.org/ du jour grâce aux indices que vous révélera Détective Pufa.",
     "content_scripts":[
         {
             "matches":["https://*.php.net/manual*indexes.functions.php", "https://pufa.afup.org/*"],
